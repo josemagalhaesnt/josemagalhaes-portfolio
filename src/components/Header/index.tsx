@@ -1,32 +1,34 @@
-import React, { useContext } from 'react';
-import Switch from 'react-switch';
-import { ThemeContext } from 'styled-components';
-import { shade } from 'polished';
+import React, { ReactElement } from 'react';
 
-import { Container } from './styles';
+// import { ThemeContext } from 'styled-components';
+import { HeaderContainer, HeaderMessage } from './styles';
+import { Icon } from '../common/Icon';
 
-interface Props {
-    toggleTheme(): void;
-}
+import ActionButton from '../common/Button/ActionButton';
+import { Text } from '../common/Text';
+import GroupItems from '../common/GroupItems';
 
-const Header: React.FC<Props> = ({ toggleTheme }) => {
-    const { colors, title } = useContext(ThemeContext);
+const Header: React.FC = (): ReactElement => {
+    // const { colors } = useContext(ThemeContext);
 
     return (
-        <Container>
-            José Magalhães
-            <Switch
-                onChange={toggleTheme}
-                checked={title === 'dark'}
-                checkedIcon={false}
-                uncheckedIcon={false}
-                height={10}
-                width={40}
-                handleDiameter={20}
-                offColor={shade(0.15, colors.primary)}
-                onColor={colors.secondary}
-            />
-        </Container>
+        <HeaderContainer>
+            <HeaderMessage>
+                <Text color="white">
+                    <small>Hello World! I am</small>
+                    <h1>José Magalhães</h1>
+                    <h3>A passionate Front-end Developer</h3>
+                </Text>
+            </HeaderMessage>
+            <GroupItems>
+                <ActionButton link="https://www.github.com/josemagalhaesnt">
+                    <Icon size={25} icon="github" />
+                </ActionButton>
+                <ActionButton link="https://www.linkedin.com/in/josemagalhaesnt">
+                    <Icon size={25} icon="linkedin2" />
+                </ActionButton>
+            </GroupItems>
+        </HeaderContainer>
     );
 };
 

@@ -1,12 +1,25 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    height: 60px;
-    background: ${props => props.theme.colors.primary};
-    font-size: 18px;
-    color: #fff;
+import headerBackground from '../../assets/photos/header.jpg';
+
+export const HeaderContainer = styled.header`
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(${headerBackground});
+    background-color: ${(props) => props.theme.colors.secondary};
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+`;
+
+export const HeaderMessage = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
     align-items: center;
-    padding: 0 30px;
+    justify-content: center;
+    padding-top: 3rem;
+    width: auto;
+    height: 25rem;
 `;
