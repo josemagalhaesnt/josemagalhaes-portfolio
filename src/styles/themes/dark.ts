@@ -6,5 +6,6 @@ export default {
 
         background: '#222',
         text: '#fff',
-    }
+        icon: '#fff',
+    },
 };
