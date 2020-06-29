@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;300;500&display=swap');
-
+   
     * {
         margin: 0;
         padding: 0;
@@ -24,5 +23,11 @@ export default createGlobalStyle`
     h1, h2, h3 {
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
+    }
+
+    small {
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
     }
 `;
