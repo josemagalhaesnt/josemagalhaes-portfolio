@@ -1,31 +1,29 @@
 import React, { ReactElement } from 'react';
-
-// import { ThemeContext } from 'styled-components';
 import { HeaderContainer, HeaderMessage } from './styles';
-import { Icon } from '../common/Icon';
-
 import ActionButton from '../common/Button/ActionButton';
 import { Text } from '../common/Text';
 import GroupItems from '../common/GroupItems';
+import { Icon } from '../common/Icon';
 
 const Header: React.FC = (): ReactElement => {
-    // const { colors } = useContext(ThemeContext);
-
     return (
         <HeaderContainer>
             <HeaderMessage>
                 <Text color="white">
                     <small>Hello World! I am</small>
                     <h1>José Magalhães</h1>
-                    <h3>A passionate Front-end Developer</h3>
+                    <h4>A passionate Front-end Developer</h4>
                 </Text>
             </HeaderMessage>
             <GroupItems>
-                <ActionButton link="https://www.github.com/josemagalhaesnt">
-                    <Icon size={25} icon="github" />
+                <ActionButton link="https://www.github.com/josemagalhaesnt" size={50} transparent>
+                    <Icon prefix="fab" size="4x" icon="github-square" color="white" />
                 </ActionButton>
-                <ActionButton link="https://www.linkedin.com/in/josemagalhaesnt">
-                    <Icon size={25} icon="linkedin2" />
+                <ActionButton link="https://www.dev.to/josemagalhaesnt" size={50} transparent>
+                    <Icon prefix="fab" size="4x" icon="dev" color="white" />
+                </ActionButton>
+                <ActionButton link="https://www.linkedin.com/in/josemagalhaesnt" size={50} transparent>
+                    <Icon prefix="fab" size="4x" icon="linkedin" color="white" />
                 </ActionButton>
             </GroupItems>
         </HeaderContainer>
