@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode, ReactNodeArray } from 'react';
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 interface Props {
     color?: string;
@@ -16,6 +17,10 @@ const StyledText = styled.div`
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     line-height: 3.5rem;
+`;
+
+const StyledTextHighlight = styled.span`
+    color: ${(props) => (props.color !== undefined ? props.color : lighten('0.15', props.theme.colors.secondary))};
 `;
 
 /* const StyledTitle = styled(StyledText)`
@@ -44,4 +49,8 @@ const Text: React.FC<Props> = ({ color, children }: Props): ReactElement => {
     return <StyledText color={color}>{children}</StyledText>;
 };
 
-export { Text };
+const TextHighlight: React.FC<Props> = ({ color, children }: Props): ReactElement => {
+    return <StyledTextHighlight color={color}>{children}</StyledTextHighlight>;
+};
+
+export { Text, TextHighlight };

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { HeaderContainer, HeaderMessage } from './styles';
 import ActionButton from '../common/Button/ActionButton';
-import { Text } from '../common/Text';
+import { Text, TextHighlight } from '../common/Text';
 import GroupItems from '../common/GroupItems';
 import { Icon } from '../common/Icon';
 import { Avatar } from '../common/Avatar';
@@ -14,7 +14,9 @@ const Header: React.FC = (): ReactElement => {
             <HeaderMessage>
                 <Text color="white">
                     <small>Hello World! I am</small>
-                    <h1>José Magalhães</h1>
+                    <h1>
+                        <TextHighlight>José Magalhães</TextHighlight>
+                    </h1>
                     <h4>A passionate Front-end Developer</h4>
                 </Text>
             </HeaderMessage>
