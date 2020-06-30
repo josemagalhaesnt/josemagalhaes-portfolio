@@ -6,7 +6,7 @@ export const NavbarStyled = styled.nav`
     font-size: 18px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 30px;
 `;

@@ -14,15 +14,21 @@ export default createGlobalStyle`
 
     body {
         background: ${(props) => props.theme.colors.background};
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: ${(props) => props.theme.colors.text};
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
+        line-height: 2.25rem;
     }
 
     h1, h2, h3 {
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
+    }
+
+    h4, h5, h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
     }
 
     small {
