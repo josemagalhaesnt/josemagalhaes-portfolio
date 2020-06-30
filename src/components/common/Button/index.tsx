@@ -1,12 +1,17 @@
 import React, { ReactElement, ReactNodeArray, ReactNode } from 'react';
 import styled, { css } from 'styled-components';
+// import { transparentize } from 'polished';
 
 interface Props {
     primary?: boolean;
+    transparent?: boolean;
     children: ReactNode | ReactNodeArray;
+    size: number;
 }
 
 const StyledButton = styled.button`
+    width: ${(props) => props.size}px;
+    height: ${(props) => props.size}px;
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     font-size: 1.2rem;
@@ -22,18 +27,33 @@ const StyledButton = styled.button`
             background-color: ${(props) => props.theme.colors.primary};
             color: white;
         `}
+    ${({ transparent }: Props) =>
+        transparent &&
+        css`
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        `}
 `;
 
 const StyledButtonRounded = styled(StyledButton)`
     border-radius: 100%;
 `;
 
-const Button: React.FC<Props> = ({ primary, children }: Props): ReactElement => {
-    return <StyledButton primary={primary}>{children}</StyledButton>;
+const Button: React.FC<Props> = ({ primary, children, transparent, size }: Props): ReactElement => {
+    return (
+        <StyledButton primary={primary} transparent={transparent} size={size}>
+            {children}
+        </StyledButton>
+    );
 };
 
-const ButtonRounded: React.FC<Props> = ({ primary, children }: Props): ReactElement => {
-    return <StyledButtonRounded primary={primary}>{children}</StyledButtonRounded>;
+const ButtonRounded: React.FC<Props> = ({ primary, children, transparent, size }: Props): ReactElement => {
+    return (
+        <StyledButtonRounded primary={primary} transparent={transparent} size={size}>
+            {children}
+        </StyledButtonRounded>
+    );
 };
 
 export { Button, ButtonRounded };
