@@ -15,15 +15,16 @@ export const StyledGroupItems = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    ${({ spacing }: Props) =>
+    /* ${({ spacing }: Props) =>
         spacing &&
         css`
             & > * {
                 margin-right: ${spacing / 10}rem;
+                margin-left: ;
             }
-        `}
+        `} */
 `;
 
 export default GroupItems;
