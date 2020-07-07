@@ -6,12 +6,12 @@ interface Props {
     primary?: boolean;
     transparent?: boolean;
     children: ReactNode | ReactNodeArray;
-    size: number;
+    size?: number;
 }
 
 const StyledButton = styled.button`
-    width: ${(props) => props.size}px;
-    height: ${(props) => props.size}px;
+   /*  width: ${(props) => props.size}px;
+    height: ${(props) => props.size}px; */
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     font-size: 1.2rem;

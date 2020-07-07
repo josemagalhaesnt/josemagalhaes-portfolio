@@ -21,13 +21,13 @@ const Header: React.FC = (): ReactElement => {
                 </Text>
             </HeaderMessage>
             <GroupItems spacing={30}>
-                <ActionButton link="https://www.github.com/josemagalhaesnt" size={50} transparent>
+                <ActionButton link="https://www.github.com/josemagalhaesnt" size={50} transparent externalLink>
                     <Icon prefix="fab" size="4x" icon="github-square" color="white" />
                 </ActionButton>
-                <ActionButton link="https://www.dev.to/josemagalhaesnt" size={50} transparent>
+                <ActionButton link="https://www.dev.to/josemagalhaesnt" size={50} transparent externalLink>
                     <Icon prefix="fab" size="4x" icon="dev" color="white" />
                 </ActionButton>
-                <ActionButton link="https://www.linkedin.com/in/josemagalhaesnt" size={50} transparent>
+                <ActionButton link="https://www.linkedin.com/in/josemagalhaesnt" size={50} transparent externalLink>
                     <Icon prefix="fab" size="4x" icon="linkedin" color="white" />
                 </ActionButton>
             </GroupItems>
