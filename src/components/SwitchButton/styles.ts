@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-const SwitchButtonStyled = styled.span`
+const SwitchButtonStyled = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
     .Icon {
-        padding: 0 8px;
+        padding: 0 0.5rem;
     }
 `;
 

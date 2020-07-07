@@ -19,7 +19,7 @@ export const SwitchButton = ({ toggleTheme }: Props): ReactElement => {
                 className="switch"
                 onChange={toggleTheme}
                 checked={title === 'dark'}
-                checkedIcon={<Icon prefix="fas" icon="sun" size="xs" color="#fff" />}
+                checkedIcon={<Icon prefix="fas" icon="sun" size="sm" color="#fff" />}
                 uncheckedIcon={<Icon prefix="fas" icon="moon" size="xs" color="#fff" />}
                 height={22}
                 prefix="fas"
