@@ -22,7 +22,7 @@ const ActionButton: React.FC<Props> = ({
     return (
         <Container primary={primary} transparent={transparent} size={size}>
             {externalLink ? (
-                <a href={link} rel="noreferrer" target="_blank">
+                <a href={link} rel="noopener noreferrer" target="_blank">
                     {children}
                 </a>
             ) : (
