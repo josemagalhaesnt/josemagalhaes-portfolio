@@ -16,13 +16,13 @@ export default createGlobalStyle`
         background: ${(props) => props.theme.colors.background};
         font-size: 1.6rem;
         color: ${(props) => props.theme.colors.text};
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-weight: 400;
         line-height: 2.25rem;
     }
 
     h1, h2, h3 {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-weight: 600;
     }
 
@@ -33,7 +33,7 @@ export default createGlobalStyle`
 
     small {
         font-size: 1.5rem;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-weight: 200;
     }
 `;
