@@ -1,12 +1,13 @@
 export default {
     title: 'light',
     colors: {
-        primary: '#004E8F',
-        secondary: '#4BB3FD',
-        main: '#0496FF',
-
-        background: '#f5f5f5',
-        text: '#333',
-        icon: '#333',
+        primary: '#A6E1FA',
+        secondary: '#0E6BA8',
+        tertiary: '#0A2472',
+        highlight1: '#001C55',
+        highlight2: '#00072D',
+        background1: '#f5f5f5',
+        background2: '#c7c7c7',
+        text: '#222',
     },
 };
