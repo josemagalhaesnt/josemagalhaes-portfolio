@@ -17,14 +17,13 @@ export const StyledGroupItems = styled.div`
     align-items: center;
     justify-content: space-around;
 
-    /* ${({ spacing }: Props) =>
+    ${({ spacing }: Props) =>
         spacing &&
         css`
-            & > * {
+            > :::not(::last-child) {
                 margin-right: ${spacing / 10}rem;
-                margin-left: ;
             }
-        `} */
+        `}
 `;
 
 export default GroupItems;

@@ -20,7 +20,8 @@ const StyledText = styled.div`
 `;
 
 const StyledTextHighlight = styled.span`
-    color: ${(props) => (props.color !== undefined ? props.color : lighten('0.15', props.theme.colors.secondary))};
+    color: ${(props) => (props.color !== undefined ? props.color : lighten('0.35', props.theme.colors.highlight1))};
+    font-weight: 700;
 `;
 
 /* const StyledTitle = styled(StyledText)`

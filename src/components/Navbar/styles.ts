@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const NavbarStyled = styled.nav`
     height: 60px;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => shade(0.15, props.theme.colors.background1)};
     font-size: 18px;
     color: #fff;
     display: flex;

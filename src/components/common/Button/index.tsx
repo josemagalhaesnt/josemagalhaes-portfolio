@@ -12,12 +12,12 @@ interface Props {
 const StyledButton = styled.button`
    /*  width: ${(props) => props.size}px;
     height: ${(props) => props.size}px; */
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${(props) => props.theme.colors.tertiary};
     color: ${(props) => props.theme.colors.text};
     font-size: 1.2rem;
     margin: 1rem;
     padding: 0.5rem 1rem;
-    border: 1px solid ${(props) => props.theme.colors.background};
+    border: 1px solid ${(props) => props.theme.colors.tertiary};
     border-radius: 3px;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
 

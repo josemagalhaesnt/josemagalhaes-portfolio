@@ -13,7 +13,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background: ${(props) => props.theme.colors.background};
+        background: ${(props) => props.theme.colors.background1};
         font-size: 1.6rem;
         color: ${(props) => props.theme.colors.text};
         font-family: 'Raleway', sans-serif;
